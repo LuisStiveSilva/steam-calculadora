@@ -14,6 +14,8 @@ form.addEventListener('submit', (e)=>{
     }
     if(index>0){
         output.textContent = `Resultado: $${respuesta.slice(0, index+3)}`
+    } else {
+        output.textContent = `Resultado: $${respuesta}`
     }
 })
 
