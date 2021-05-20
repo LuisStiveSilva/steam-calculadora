@@ -1,0 +1,50 @@
+.logo {
+  max-width: 200px;
+  padding: 10px;
+}
+
+.title {
+  margin: 50px auto;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+}
+.container {
+  width: 300px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 3px solid $secondary;
+  @include laptop {
+    width: 500px;
+  }
+  & > .input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    &:focus {
+      border: 2px solid $secondary;
+    }
+  }
+  & > .advertencia {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    text-align: left;
+  }
+  & > .button {
+    background-color: $secondary;
+    color: $primary;
+    border: none;
+    outline: none;
+    margin: 20px;
+    padding: 5px 10px;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+      background-color: $third;
+    }
+  }
+}

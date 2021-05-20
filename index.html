@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="dist/styles.css">
+    <title>Calculadora de Steam</title>
+</head>
+<body>
+    <h1 class="title">Calculadora de impuestos de Steam</h1>
+    <h2 class="subtitle">Gracias Alberto</h2>
+    <a href="https://store.steampowered.com" target="_blank">
+        <img class="logo" src="images/Steam-Logo.png" alt="">
+        <p>Ir a Steam</p>
+    </a>
+    <form class="container" id="form">
+        <input id="input" step="any" type="number" class="input" autofocus min="0" placeholder="Ingrese el monto a pesos argentinos" onClick="this.select();">
+        <p class="advertencia">*Ingrese punto en vez de coma</p>
+        <input type="submit" id="button" class="button" value="Calcular">
+        <p id="output" class="output">Resultado: $0</p>
+    </form>
+    <p>*Sirve para calcular cualquier compra digital del exterior (ej: Netflix, Disney+, etc.)</p>
+
+    <script src="app/js/scripts.js"></script>
+</body>
+</html>
